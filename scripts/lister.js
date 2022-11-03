@@ -8,7 +8,7 @@ const addItem = () => {
   let listItem = document.createElement("li");
   let deleteBtn = document.createElement("button");
 
-  deleteBtn.textContent = "-";
+  deleteBtn.textContent = "\u{1F7AC}"; // this is how to add a unicode char
   deleteBtn.setAttribute("type", "button");
   deleteBtn.classList.add("deleteBtn");
 

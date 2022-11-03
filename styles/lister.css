@@ -1,11 +1,10 @@
 body {
-    background-color: #F8F4DB;
+    background-color: #f8f4db;
     font-family: Inter, sans-serif;
     font-weight: 300;
 }
 
 .main-page-container {
-
     display: flex;
     height: 100vh;
     margin: auto;
@@ -18,7 +17,6 @@ body {
 
 .new-lister-logo {
     width: 170px;
-
 }
 
 h1 {
@@ -39,38 +37,69 @@ h2 {
     margin-right: -7px;
 }
 
-.list-container {
+
+.list {
     box-sizing: border-box;
     border: 2px solid black;
     margin-top: 10px;
-    background-color: whitesmoke;
-
-}
-
-.list {
+    background-color: white;
     padding: 0;
     margin: 10px;
+    border-radius: 9px;
+
 }
+
+
+/*.list:last-child {*/
+/*    padding-bottom:0;*/
+/*    border-bottom: 1px solid red;*/
+/*}*/
 
 .list li {
     list-style: none;
-    margin-bottom: 10px;
-    padding: 3px;
+
+    padding: 7px;
     font-weight: bolder;
+    border-bottom: 2px solid black;
+}
+
+input[type="text"] {
+    padding: 7px;
+    border: 1px solid #0ce370;
 
 }
+
+input[type="text"]:focus {
+    outline: none;
+    border: 1px solid #0ce370;
+
+}
+
 .addListItemBtn {
-    font-weight: 900 ;
-    color: white;
-    background-color: #0CE370;
-    border: none;
-}
-.deleteBtn {
-
-    border: none;
-    color: white;
-    background-color: crimson;
     font-weight: 900;
+    font-size: 1.6em;
+    color: #0ce370;
+    background-color: white;
+    border: 1px solid #0ce370;
+    padding: 2px 8px;
+    border-left: none;
+    padding-bottom: 1px;
+    position: relative;
+    left: -6px;
+    top: 4px
 
 }
 
+.deleteBtn {
+    font-weight: 900;
+    font-size: 1.2em;
+    color: crimson;
+    border-style: none;
+    margin-left: 10px;
+    background-color: white;
+
+}
+
+.deleteBtn:hover, .addListItemBtn:hover {
+    cursor: pointer;
+}
