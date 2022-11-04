@@ -8,7 +8,6 @@ body {
     display: flex;
     height: 100vh;
     margin: auto;
-    width: 960px;
 }
 
 .logo-container {
@@ -37,18 +36,15 @@ h2 {
     margin-right: -7px;
 }
 
-
 .list {
     box-sizing: border-box;
-    border: 2px solid black;
     margin-top: 10px;
     background-color: white;
     padding: 0;
-    margin: 10px;
     border-radius: 9px;
+    width: 500px;
 
 }
-
 
 /*.list:last-child {*/
 /*    padding-bottom:0;*/
@@ -57,10 +53,11 @@ h2 {
 
 .list li {
     list-style: none;
-
     padding: 7px;
     font-weight: bolder;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #B2E2FE;
+    display: flex;
+
 }
 
 input[type="text"] {
@@ -90,6 +87,10 @@ input[type="text"]:focus {
 
 }
 
+.addListItemBtn:hover {
+    cursor: pointer;
+}
+
 .deleteBtn {
     font-weight: 900;
     font-size: 1.2em;
@@ -97,6 +98,9 @@ input[type="text"]:focus {
     border-style: none;
     margin-left: 10px;
     background-color: white;
+    position: relative;
+    top: 1px;
+    align-content: flex-end;
 
 }
 
