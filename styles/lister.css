@@ -1,49 +1,54 @@
 body {
-    background-color: #f8f4db;
-    font-family: Inter, sans-serif;
-    font-weight: 300;
+  background-color: #f8f4db;
+  font-family: Inter, sans-serif;
+  font-weight: 300;
 }
 
 .main-page-container {
-    display: flex;
-    height: 100vh;
-    margin: auto;
+  display: flex;
+  height: 100vh;
+  margin: auto;
 }
 
 .logo-container {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .new-lister-logo {
-    width: 170px;
+  width: 170px;
 }
 
 h1 {
-    font-weight: 900;
-    font-size: 3em;
-    margin: 0;
+  font-weight: 900;
+  font-size: 3em;
+  margin: 0;
 }
 
 h2 {
-    font-weight: 300;
-    font-size: 1.3em;
+  font-weight: 300;
+  font-size: 1.3em;
+}
+
+.list-title {
+  font-size: 30px;
+  font-weight: 900;
+  width: 450px;
 }
 
 .logo {
-    width: 47px;
-    position: relative;
-    top: 6px;
-    margin-right: -7px;
+  width: 47px;
+  position: relative;
+  top: 6px;
+  margin-right: -7px;
 }
 
 .list {
-    box-sizing: border-box;
-    margin-top: 10px;
-    background-color: white;
-    padding: 0;
-    border-radius: 9px;
-    width: 500px;
-
+  box-sizing: border-box;
+  margin-top: 10px;
+  background-color: white;
+  padding: 0;
+  border-radius: 9px;
+  width: 500px;
 }
 
 /*.list:last-child {*/
@@ -52,58 +57,77 @@ h2 {
 /*}*/
 
 .list li {
-    list-style: none;
-    padding: 7px;
-    font-weight: bolder;
-    border-bottom: 2px solid #B2E2FE;
-    display: flex;
+  list-style: none;
+  padding: 7px;
+  font-weight: bolder;
+  border-bottom: 2px solid #b2e2fe;
+  display: flex;
+}
 
+.list li:last-child {
+  border-bottom: none;
 }
 
 input[type="text"] {
-    padding: 7px;
-    border: 1px solid #0ce370;
-
+  padding: 7px;
+  border: 1px solid #0ce370;
 }
 
 input[type="text"]:focus {
-    outline: none;
-    border: 1px solid #0ce370;
+  outline: none;
+  border: 1px solid #0ce370;
+}
 
+.addListTitleBtn {
+  font-weight: 900;
+  font-size: 1.6em;
+  color: #0ce370;
+  background-color: white;
+  border: 1px solid #0ce370;
+  padding: 2px 8px;
+  border-left: none;
+  padding-bottom: 1px;
+  position: relative;
+  left: -6px;
+  top: 4px;
+
+}
+
+.addListTitleBtn:hover {
+  cursor: pointer;
 }
 
 .addListItemBtn {
-    font-weight: 900;
-    font-size: 1.6em;
-    color: #0ce370;
-    background-color: white;
-    border: 1px solid #0ce370;
-    padding: 2px 8px;
-    border-left: none;
-    padding-bottom: 1px;
-    position: relative;
-    left: -6px;
-    top: 4px
-
+  font-weight: 900;
+  font-size: 1.6em;
+  color: #0ce370;
+  background-color: white;
+  border: 1px solid #0ce370;
+  padding: 2px 8px;
+  border-left: none;
+  padding-bottom: 1px;
+  position: relative;
+  left: -6px;
+  top: 4px;
 }
 
 .addListItemBtn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .deleteBtn {
-    font-weight: 900;
-    font-size: 1.2em;
-    color: crimson;
-    border-style: none;
-    margin-left: 10px;
-    background-color: white;
-    position: relative;
-    top: 1px;
-    align-content: flex-end;
-
+  font-weight: 900;
+  font-size: 1.2em;
+  color: crimson;
+  border-style: none;
+  margin-left: 10px;
+  background-color: white;
+  position: relative;
+  top: 1px;
+  align-content: flex-end;
 }
 
-.deleteBtn:hover, .addListItemBtn:hover {
-    cursor: pointer;
+.deleteBtn:hover,
+.addListItemBtn:hover {
+  cursor: pointer;
 }
