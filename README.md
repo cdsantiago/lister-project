@@ -1,4 +1,4 @@
-# LISTER
+# NOTER
 
-Lister is a web app that allows users create personalized lists.
+Noter is a web app that allows users create personalized lists.
 
