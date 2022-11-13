@@ -7,15 +7,17 @@ body {
 .main-page-container {
   display: flex;
   height: 100vh;
-  margin: auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .logo-container {
-  margin: 10px 0;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 
 .new-lister-logo {
-  width: 170px;
+  width: 165px;
 }
 
 h1 {
@@ -25,14 +27,22 @@ h1 {
 }
 
 h2 {
-  font-weight: 300;
-  font-size: 1.3em;
+
+  font-size: 1.6em;
+  font-weight: bold;
+
 }
 
 .list-title {
-  font-size: 30px;
-  font-weight: 900;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
   width: 450px;
+  margin-top: 20px 0;
+}
+
+strong {
+  font-weight: bold;
 }
 
 .logo {
@@ -48,7 +58,8 @@ h2 {
   background-color: white;
   padding: 0;
   border-radius: 9px;
-  width: 500px;
+  max-width: 50vw;
+  overflow-wrap: break-word;
 }
 
 /*.list:last-child {*/
@@ -62,15 +73,25 @@ h2 {
   font-weight: bolder;
   border-bottom: 2px solid #b2e2fe;
   display: flex;
+
+  overflow-wrap: break-word;
 }
 
 .list li:last-child {
   border-bottom: none;
 }
 
+.input-wrapper {
+  margin: 10px 0;
+  display: inline-block;
+
+}
+
 input[type="text"] {
   padding: 7px;
   border: 1px solid #0ce370;
+  margin: 10px 0;
+
 }
 
 input[type="text"]:focus {

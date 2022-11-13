@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
     <link href="styles/lister.css" rel="stylesheet" />
-    <title>Lister</title>
+    <title>Noter</title>
   </head>
   <body>
     <div class="main-page-container">
@@ -32,17 +32,26 @@
             /></span>
           </h1>
         </div>
-        <h2>
-          Create awesome looking lists to keep for yourself or share with your
-          friends.
-        </h2>
-        <label for="input-title">First add a title to your list</label> <br />
-        <input id="input-title" type="text" />
-        <button class="addListTitleBtn" type="button">+</button>
-        <br />
-        <label for="items-input">Now add items</label> <br />
-        <input id="items-input" type="text" />
-        <button class="addListItemBtn" type="button">+</button>
+
+        <div class="input-wrapper">
+          <label for="input-title"
+            >Start with a <strong>heading:</strong>
+          </label>
+          <br />
+          <input
+            id="input-title"
+            placeholder="Greatest Movies Of All Time"
+            type="text"
+          />
+          <button class="addListTitleBtn" type="button">+</button>
+          <br />
+        </div>
+        <div class="input-wrapper">
+          <label for="items-input">Then add <strong> notes:</strong></label>
+          <br />
+          <input id="items-input" placeholder="Forrest Gump" type="text" />
+          <button class="addListItemBtn" type="button">+</button>
+        </div>
         <div class="list-container">
           <ul class="list"></ul>
         </div>
